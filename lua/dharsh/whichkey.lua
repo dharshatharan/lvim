@@ -24,7 +24,8 @@ lvim.builtin.which_key.mappings.b.f = {
 
 lvim.builtin.which_key.mappings["S"] = {
   name = "Show",
-  o = { "<cmd>SymbolsOutline<CR>", "Outline" }
+  o = { "<cmd>SymbolsOutline<CR>", "Outline" },
+  u = { "<cmd>UndotreeToggle<CR>", "Undo Tree" },
 }
 
 lvim.builtin.which_key.mappings["t"] = {

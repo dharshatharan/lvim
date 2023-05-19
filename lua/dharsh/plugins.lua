@@ -110,5 +110,6 @@ lvim.plugins = {
     "folke/trouble.nvim",
     dependencies = "nvim-tree/nvim-web-devicons",
   },
+  'mbbill/undotree',
   "mg979/vim-visual-multi",
 }
