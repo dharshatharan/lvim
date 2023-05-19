@@ -22,7 +22,7 @@ lvim.format_on_save = {
 -- lvim.use_icons = false
 
 -- -- Change theme settings
--- lvim.colorscheme = "lunar"
+lvim.colorscheme = "slate"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
