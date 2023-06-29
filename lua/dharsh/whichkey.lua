@@ -2,7 +2,8 @@ lvim.builtin.which_key.mappings["f"] = {
   name = "Find",
   b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
   c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
-  f = { "<cmd>Telescope find_files<cr>", "Find files" },
+  f = { "<cmd>Telescope find_files hidden=true<cr>", "Find files" },
+  g = { "<cmd>Telescope git_files<cr>", "Git files" },
   t = { "<cmd>Telescope live_grep<cr>", "Find Text" },
   s = { "<cmd>Telescope grep_string<cr>", "Find String" },
   h = { "<cmd>Telescope help_tags<cr>", "Help" },
@@ -26,6 +27,11 @@ lvim.builtin.which_key.mappings["S"] = {
   name = "Show",
   o = { "<cmd>SymbolsOutline<CR>", "Outline" },
   u = { "<cmd>UndotreeToggle<CR>", "Undo Tree" },
+}
+
+lvim.builtin.which_key.mappings.l = {
+  h = { require('hover').hover, "Hover" },
+  H = { require('hover').hover_select, "Hover Select" },
 }
 
 lvim.builtin.which_key.mappings["t"] = {
