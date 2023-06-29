@@ -1,3 +1,5 @@
+reload "dharsh.formatters"
+reload "dharsh.linters"
 reload "dharsh.keymappings"
 reload "dharsh.nvim-ufo"
 reload "dharsh.plugins"
@@ -14,7 +16,6 @@ vim.opt.relativenumber = true
 lvim.log.level = "info"
 lvim.format_on_save = {
   enabled = true,
-  pattern = "*.lua",
   timeout = 1000,
 }
 

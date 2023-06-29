@@ -11,6 +11,17 @@ lvim.plugins = {
     end,
   },
   {
+    'glacambre/firenvim',
+    lazy = false,
+    -- Lazy load firenvim
+    -- Explanation: https://github.com/folke/lazy.nvim/discussions/463#discussioncomment-4819297
+    cond = not not vim.g.started_by_firenvim,
+    build = function()
+      require("lazy").load({ plugins = "firenvim", wait = true })
+      vim.fn["firenvim#install"](0)
+    end
+  },
+  {
     "f-person/git-blame.nvim",
     event = "BufRead",
     config = function()
@@ -23,6 +34,33 @@ lvim.plugins = {
     config = function()
       require('gitsigns').setup()
       require("scrollbar.handlers.gitsigns").setup()
+    end
+  },
+  {
+    "lewis6991/hover.nvim",
+    config = function()
+      require("hover").setup {
+        init = function()
+          -- Require providers
+          require("hover.providers.lsp")
+          require('hover.providers.gh')
+          require('hover.providers.gh_user')
+          -- require('hover.providers.jira')
+          -- require('hover.providers.man')
+          -- require('hover.providers.dictionary')
+        end,
+        preview_opts = {
+          border = nil
+        },
+        -- Whether the contents of a currently open hover window should be moved
+        -- to a :h preview-window when pressing the hover keymap.
+        preview_window = false,
+        title = true
+      }
+
+      -- Setup keymaps
+      -- vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })
+      -- vim.keymap.set("n", "gK", require("hover").hover_select, { desc = "hover.nvim (select)" })
     end
   },
   {
