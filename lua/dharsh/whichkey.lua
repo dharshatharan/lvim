@@ -25,14 +25,13 @@ lvim.builtin.which_key.mappings.b.f = {
 
 lvim.builtin.which_key.mappings["S"] = {
   name = "Show",
+  d = { "<cmd>lua require 'dharsh.terminal'.lazydocker_toggle()<cr>", "LazyDocker" },
   o = { "<cmd>SymbolsOutline<CR>", "Outline" },
   u = { "<cmd>UndotreeToggle<CR>", "Undo Tree" },
 }
 
-lvim.builtin.which_key.mappings.l = {
-  h = { require('hover').hover, "Hover" },
-  H = { require('hover').hover_select, "Hover Select" },
-}
+lvim.builtin.which_key.mappings.h = { require('hover').hover, "Hover" }
+lvim.builtin.which_key.mappings.H = { require('hover').hover_select, "Hover Select" }
 
 lvim.builtin.which_key.mappings["t"] = {
   name = "Diagnostics",
