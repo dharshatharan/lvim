@@ -1,3 +1,4 @@
+reload "dharsh.firenvim"
 reload "dharsh.formatters"
 reload "dharsh.linters"
 reload "dharsh.keymappings"
