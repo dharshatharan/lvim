@@ -45,3 +45,5 @@ lvim.builtin.which_key.mappings["t"] = {
 
 -- -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
+
+lvim.builtin.which_key.setup.plugins.presets.z = true
