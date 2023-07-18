@@ -16,7 +16,11 @@ lvim.plugins = {
     end,
   },
   {
-    'glacambre/firenvim',
+    "sindrets/diffview.nvim",
+    event = "BufRead",
+  },
+  {
+    "glacambre/firenvim",
     lazy = false,
     -- Lazy load firenvim
     -- Explanation: https://github.com/folke/lazy.nvim/discussions/463#discussioncomment-4819297
@@ -105,6 +109,13 @@ lvim.plugins = {
     config = function()
       require("scrollbar").setup()
     end
+  },
+  {
+    "windwp/nvim-spectre",
+    event = "BufRead",
+    config = function()
+      require("spectre").setup()
+    end,
   },
   {
     "romgrk/nvim-treesitter-context",

@@ -15,7 +15,7 @@ lvim.builtin.which_key.mappings["f"] = {
   R = { "<cmd>Telescope registers<cr>", "Registers" },
   k = { "<cmd>Telescope keymaps<cr>", "Keymaps" },
   C = { "<cmd>Telescope commands<cr>", "Commands" },
-  p = { "<cmd>Telescope projects<CR>", "Projects" },
+  p = { "<cmd>Telescope projects<cr>", "Projects" },
 }
 
 lvim.builtin.which_key.mappings.b.f = {
@@ -23,11 +23,13 @@ lvim.builtin.which_key.mappings.b.f = {
   "Find"
 }
 
+lvim.builtin.which_key.mappings.s.r = { "<cmd>lua require('spectre').open()<cr>", "Search and Replace" }
+
 lvim.builtin.which_key.mappings["S"] = {
   name = "Show",
   d = { "<cmd>lua require 'dharsh.terminal'.lazydocker_toggle()<cr>", "LazyDocker" },
-  o = { "<cmd>SymbolsOutline<CR>", "Outline" },
-  u = { "<cmd>UndotreeToggle<CR>", "Undo Tree" },
+  o = { "<cmd>SymbolsOutline<cr>", "Outline" },
+  u = { "<cmd>UndotreeToggle<cr>", "Undo Tree" },
 }
 
 lvim.builtin.which_key.mappings.h = { require('hover').hover, "Hover" }
