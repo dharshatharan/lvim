@@ -1,18 +1,16 @@
 lvim.plugins = {
   {
-    "github/copilot.vim",
-    event = "VeryLazy",
+    "zbirenbaum/copilot-cmp",
+    event = "InsertEnter",
+    dependencies = { "zbirenbaum/copilot.lua" },
     config = function()
-      -- copilot assume mapped
-      vim.g.copilot_assume_mapped = true
-      vim.g.copilot_no_tab_map = true
-    end,
-  },
-  {
-    "hrsh7th/cmp-copilot",
-    config = function()
-      lvim.builtin.cmp.formatting.source_names["copilot"] = "( )"
-      table.insert(lvim.builtin.cmp.sources, 2, { name = "copilot" })
+      vim.defer_fn(function()
+        require("copilot").setup({
+          suggestion = { enabled = false },
+          panel = { enabled = false },
+        })
+        require("copilot_cmp").setup()
+      end, 100)
     end,
   },
   {
