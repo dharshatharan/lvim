@@ -24,7 +24,7 @@ lvim.format_on_save = {
 -- lvim.use_icons = false
 
 -- -- Change theme settings
-lvim.colorscheme = "slate"
+lvim.colorscheme = "koehler"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
