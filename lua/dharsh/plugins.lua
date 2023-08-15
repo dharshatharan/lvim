@@ -164,4 +164,5 @@ lvim.plugins = {
   },
   'mbbill/undotree',
   "mg979/vim-visual-multi",
+  'wakatime/vim-wakatime',
 }
