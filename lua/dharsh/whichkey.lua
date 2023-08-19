@@ -58,3 +58,9 @@ lvim.builtin.which_key.mappings.C = {
   p = { "<cmd>Copilot panel<cr>", "Panel" },
   s = { "<cmd>Copilot status<cr>", "Status" },
 }
+
+-- Open files
+lvim.builtin.which_key.mappings.o = {
+  name = "Open",
+  i = { "<cmd>!xdg-open %<cr>", "Image Preview" },
+}
