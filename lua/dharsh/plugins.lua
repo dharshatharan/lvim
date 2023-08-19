@@ -1,18 +1,5 @@
 lvim.plugins = {
-  {
-    "zbirenbaum/copilot-cmp",
-    event = "InsertEnter",
-    dependencies = { "zbirenbaum/copilot.lua" },
-    config = function()
-      vim.defer_fn(function()
-        require("copilot").setup({
-          suggestion = { enabled = false },
-          panel = { enabled = false },
-        })
-        require("copilot_cmp").setup()
-      end, 100)
-    end,
-  },
+  "github/copilot.vim",
   {
     "sindrets/diffview.nvim",
     event = "BufRead",
@@ -75,6 +62,10 @@ lvim.plugins = {
     event = "BufRead",
   },
   {
+    "rose-pine/neovim",
+    name = "rose-pine",
+  },
+  {
     "karb94/neoscroll.nvim",
     event = "WinScrolled",
     config = function()
@@ -90,6 +81,25 @@ lvim.plugins = {
         easing_function = nil,       -- Default easing function
         pre_hook = nil,              -- Function to run before the scrolling animation starts
         post_hook = nil,             -- Function to run after the scrolling animation ends
+      })
+    end
+  },
+  {
+    'norcalli/nvim-colorizer.lua',
+    config = function()
+      require('colorizer').setup({
+        filetypes = {
+          'css',
+          'javascript',
+          'typescript',
+          'html'
+        },
+        user_default_options = {
+          RGB = true,
+          RRGGBB = true,
+          rgb_fn = true,
+          mode = 'background'
+        },
       })
     end
   },
@@ -163,6 +173,7 @@ lvim.plugins = {
     dependencies = "nvim-tree/nvim-web-devicons",
   },
   'mbbill/undotree',
+  "tpope/vim-surround",
   "mg979/vim-visual-multi",
   'wakatime/vim-wakatime',
 }

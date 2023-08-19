@@ -49,3 +49,12 @@ lvim.builtin.which_key.mappings["t"] = {
 lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
 
 lvim.builtin.which_key.setup.plugins.presets.z = true
+
+-- Copilot
+lvim.builtin.which_key.mappings.C = {
+  name = "Copilot",
+  d = { "<cmd>Copilot disable<cr>", "Disable" },
+  e = { "<cmd>Copilot enable<cr>", "Enable" },
+  p = { "<cmd>Copilot panel<cr>", "Panel" },
+  s = { "<cmd>Copilot status<cr>", "Status" },
+}
