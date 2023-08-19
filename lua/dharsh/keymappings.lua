@@ -1,16 +1,5 @@
 lvim.leader = "space"
 
--- Motion remaps
-lvim.keys.normal_mode["H"] = "^"
-lvim.keys.normal_mode["L"] = "$"
-lvim.keys.normal_mode["K"] = "gg"
-lvim.keys.normal_mode["J"] = "G"
-
-lvim.keys.visual_mode["H"] = "^"
-lvim.keys.visual_mode["L"] = "$"
-lvim.keys.visual_mode["K"] = "gg"
-lvim.keys.visual_mode["J"] = "G"
-
 -- NOH
 lvim.keys.normal_mode["<Esc>"] = "<cmd>noh<cr>"
 
