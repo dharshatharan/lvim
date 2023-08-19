@@ -26,6 +26,13 @@ lvim.format_on_save = {
 
 -- -- Change theme settings
 lvim.colorscheme = "rose-pine-main"
+lvim.transparent_window = true
+vim.cmd [[ autocmd ColorScheme * hi NormalNC guibg=NONE ]]
+vim.cmd [[ autocmd ColorScheme * hi NormalFloat guibg=NONE ]]
+vim.cmd [[ autocmd ColorScheme * hi FloatBorder guibg=NONE ]]
+vim.cmd [[ autocmd ColorScheme * hi TelescopeNormal guibg=NONE ]]
+vim.cmd [[ autocmd ColorScheme * hi WhichKeyFloat guibg=NONE ]]
+
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
