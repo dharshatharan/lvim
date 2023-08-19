@@ -1,3 +1,4 @@
+reload "dharsh.copilot"
 reload "dharsh.firenvim"
 reload "dharsh.formatters"
 reload "dharsh.linters"
@@ -24,7 +25,7 @@ lvim.format_on_save = {
 -- lvim.use_icons = false
 
 -- -- Change theme settings
-lvim.colorscheme = "koehler"
+lvim.colorscheme = "rose-pine-main"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
